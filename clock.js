@@ -11,6 +11,7 @@ function getTime() {
 
 function init() {
     getTime();
+    //일정시간마다 getTime 실행
     setInterval(getTime, 1000);
 }
 init()
