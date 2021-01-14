@@ -10,6 +10,7 @@ function savaName(text) {
 }
 
 function handleSubmit(e) {
+    //이벤트의 전파를 막지않고 이벤트를 취소
     e.preventDefault();
     const currentValue = input.value;
     paintGreeting(currentValue);
