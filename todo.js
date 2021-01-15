@@ -13,8 +13,7 @@ function delToDo(e) {
     const li = btn.parentNode;
     toDolist.removeChild(li);
     const cleanToDos = toDos.filter(function (toDo) {
-        return toDo.id !== par
-        seInt(li.id);
+        return toDo.id !== parseInt(li.id);
     });
     toDos = cleanToDos;
     saveToDos();
